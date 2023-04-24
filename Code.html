@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <title>Licores Hidromiel</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <!-- Aquí va el contenido de la página, incluyendo el código de la calculadora -->
+    <nav class="calculator-menu">
+      <a href="#" id="open-calculator">Calculadora de licor</a>
+    </nav>
+
+    <div id="calculator-popup">
+      <div class="calculator-container">
+        <h2>Calculadora de licor</h2>
+        <form>
+          <label for="guests">Número de invitados:</label>
+          <input type="number" id="guests" name="guests" required>
+
+          <label for="duration">Duración de la fiesta (en horas):</label>
+          <input type="number" id="duration" name="duration" required>
+
+          <label for="size">Tamaño de la botella (en ml):</label>
+          <select id="size" name="size" required>
+            <option value="200">200 ml</option>
+            <option value="700">700 ml</option>
+          </select>
+
+          <button type="button" id="calculate-button">Calcular</button>
+        </form>
+
+        <div id="result">
+          <p>Deberás comprar <span id="total-bottles"></span> botella(s) de Hidromiel.</p>
+        </div>
+      </div>
+
+      <div id="overlay"></div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
